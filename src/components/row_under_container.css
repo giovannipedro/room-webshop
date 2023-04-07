@@ -1,0 +1,23 @@
+.column{
+    max-height: 100vh;
+}
+.under-container{
+    display: flex;
+    flex-direction: row;
+}
+.under-container .column-txt-block{
+    height: 210px;
+    padding: 30px;
+}
+
+.column-txt-block{
+
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+   
+    
+}

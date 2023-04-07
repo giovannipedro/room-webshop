@@ -1,0 +1,52 @@
+.navbar ul  {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar {
+    position: relative;
+    height: 60px;
+    background-color: transparent;
+    margin-bottom: -60px;
+   z-index: 1000;
+   color: white;
+}
+.navbar .container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
+    gap: 60px;
+}
+
+.navbar div.logo {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+.navbar #myLinks{
+    display: none;
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+    
+  }
+  
+  li > a:hover::after, li > a.active-nav::after {
+    width: 100%;
+    background: white;
+  }

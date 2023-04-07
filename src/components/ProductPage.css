@@ -1,0 +1,24 @@
+.shop-btn {
+    text-decoration: none;
+    background-color: black;
+    padding: 13px 24px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.price{
+    font-size: 25px;
+}
+
+.Description {
+    font-weight: 600;
+}
+
+.product-image 
+{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+   
+}

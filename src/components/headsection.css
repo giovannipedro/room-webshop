@@ -1,0 +1,97 @@
+.column{
+    max-height: 100vh;
+}
+.under-container .column-txt-block{
+    height: 210px;
+    padding: 30px;
+}
+
+.Slides{
+    display: flex;
+    flex-direction: row ;
+}
+
+.column-txt-block{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.column-txt-block h2 {
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.column-txt-block p {
+
+    color: hsl(0, 0%, 63%);
+    font-weight: 300;
+}
+
+.under-container .column-txt-block h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+ a.primary-btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 12.5px;
+    font-size: 18px;
+}
+
+a.primary-btn::after{
+    content: url("../images/icon-arrow.svg");
+    position: absolute;
+    width: 14px;
+    height: 24px;
+    padding-left: 15px;
+    transition:  2s ease-out;
+}
+
+
+
+#slide1 img, #slide1 .column-txt-block{
+
+    height: 435px;
+}
+
+.icon{
+    display: none;
+}
+
+
+.slide-btns button{
+
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+/* mobile css */
+@media only screen and (max-width: 480px){
+    .Slides{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .column-txt-block h2 {
+        font-weight: 500;
+        font-size: 28px;
+    }
+
+    .under-container{
+        display: flex;
+        flex-direction: column !important;
+        max-width: 100vw;
+    }
+    
+}
